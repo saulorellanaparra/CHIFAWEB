@@ -1,0 +1,335 @@
+
+#header-nav {
+    background-color: #f6b319; /* Establece el color de fondo del elemento con ID 'header-nav' a un tono amarillo anaranjado */
+    border-radius: 0; /* Elimina cualquier redondeo en las esquinas del elemento */
+    border: 0; /* Elimina cualquier borde del elemento */
+}
+
+#logo-img {
+    background: url('../images/restaurant-logo_large.png') no-repeat; /* Establece una imagen de fondo para el logo, sin repetirla */
+    width: 150px; /* Define el ancho del logo a 150 píxeles */
+    height: 150px; /* Define la altura del logo a 150 píxeles */
+    margin: 10px 15px 10px 0; /* Establece un margen de 10 píxeles arriba y abajo, 15 píxeles a la derecha y 0 a la izquierda */
+}
+
+.navbar-brand {
+    padding-top: 25px; /* Agrega un relleno de 25 píxeles en la parte superior del elemento con la clase 'navbar-brand' */
+}
+
+.navbar-brand h1 { /* Estilos para el encabezado h1 dentro de 'navbar-brand', que representa el nombre del restaurante */
+    font-family: 'Lora', serif; /* Establece la fuente a 'Lora' con un estilo serif */
+    color: #557c3e; /* Define el color del texto a un verde oscuro */
+    font-size: 1.5em; /* Establece el tamaño de la fuente a 1.5 veces el tamaño de fuente base */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    font-weight: bold; /* Establece el peso de la fuente a negrita */
+    text-shadow: 1px 1px 1px #222; /* Agrega una sombra al texto, desplazada 1 píxel a la derecha y abajo, con un color gris oscuro */
+    margin-top: 0; /* Elimina el margen superior */
+    margin-bottom: 0; /* Elimina el margen inferior */
+    line-height: .75; /* Establece la altura de línea a 0.75, lo que reduce el espacio entre líneas */
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus { 
+    text-decoration: none; /* Elimina el subrayado de los enlaces dentro de 'navbar-brand' cuando se pasa el mouse o se enfoca */
+}
+
+.navbar-brand p { /* Estilos para el párrafo dentro de 'navbar-brand', que representa la certificación kosher */
+    color: #000; /* Establece el color del texto a negro */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    font-size: .7em; /* Establece el tamaño de la fuente a 0.7 veces el tamaño de fuente base */
+    margin-top: 15px; /* Agrega un margen superior de 15 píxeles */
+}
+
+.navbar-brand p span { /* Estilos para el elemento 'span' dentro del párrafo de 'navbar-brand' */
+    vertical-align: middle; /* Alinea verticalmente el 'span' al medio de la línea de texto */
+}
+
+
+/* SCREENHOST 2 */
+
+#nav-list { 
+    margin-top: 10px;
+}
+
+#nav-list a {
+    color: #951C49;
+    text-align: center; 
+}
+
+#nav-list a:hover {
+    background: #E7E7E7;
+}
+
+#nav-list a span {
+    font-size: 1.8em;
+}
+
+#phone {
+    margin-top: 5px;
+}
+
+#phone a { /* Phone number */
+    text-align: right;
+    padding-bottom: 0;
+}
+
+#phone div { /* We Deliver */
+    color: #557c3e;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle { 
+    clear: both;
+    margin-top: -30px;
+}
+
+
+
+/* SCREENHOST 3 */
+/********** Large devices only **********/
+@media (min-width: 1200px) {}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) { /* Header */
+    #logo-img {
+        background: url('../images/restaurant-logo_medium.png') no-repeat;
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0;
+    }
+             /* End Header */
+}
+
+  /********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) { }
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+    /* Header */
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+    }
+}
+
+.navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+}
+
+.navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+}
+
+.navbar-brand p img { /* Star-K */
+    height: 20px;
+}
+
+#collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+}
+
+#collapsable-nav a span { /* Collapsed nav menu glyph */ 
+    font-size: 1em;
+    margin-right: 5px;
+}
+
+#call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff; 
+    background-color: #f6b319; 
+    color: #951c49;
+}
+
+#xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+  /* End Header */
+
+
+
+
+/* SCREENHOST 4 */ 
+@media (min-width: 1200px) {
+    .container .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px; }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px){
+  /* Home Page */
+    .container .jumbotron {
+        background: url('../images/jumbotron_992.jpg') no-repeat; height: 558px;
+    }
+}
+  /* End Home Page */
+
+
+  /********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px){
+/* Home Page */
+    .container .jumbotron {
+        background: url('../images/jumbotron_768.jpg') no-repeat;
+        height: 432px;
+    }
+}
+/* End Home Page */
+
+@media (max-width: 767px){
+/* Home Page */
+    .container .jumbotron {
+        margin-top: 30px; 
+        padding: 0;   
+    }
+    #menu-tile, #specials-tile {
+        width: 360px;
+        margin: 0 auto 15px;
+    }
+    /* Footer */
+    .panel-footer section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .panel-footer section:nth-child(3) {
+        margin-bottom: 0; /* margin already exists on the whole row */
+    }
+    .panel-footer section hr {
+        width: 50%; 
+    }
+  /* End Footer */
+
+}
+/* End Home Page */
+
+
+/* SCREENHOST 5 */
+.container .jumbotron {
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+}
+
+#menu-tile, #specials-tile, #map-tile { 
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative; 
+    border: 2px solid #3F0C1F; 
+    overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover,#map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+    background: url('../images/menu-tile.jpg') no-repeat; 
+    background-position: center;
+}
+
+#specials-tile {
+    background: url('../images/specials-tile.jpg') no-repeat;
+    background-position: center; 
+}
+
+#menu-tile span, #specials-tile span, #map-tile span { 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center; 
+    font-size: 1.6em; 
+    text-transform: uppercase; 
+    background-color: #000; 
+    color: #fff;
+    opacity: .8;
+}
+    /* END HOME PAGE */
+    /********** Large devices only **********/
+
+
+
+    /* SCREENHOST 6 */
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+        padding-top: 5px;
+        font-size: 6vw;
+    }
+/* End Header */
+/* Home page */
+#menu-tile, #specials-tile {
+        width: 280px;
+        margin: 0 auto 15px;
+    } 
+}
+
+
+
+/* SCREENHOST 7 */
+/* Footer */
+.panel-footer section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .panel-footer section:nth-child(3) {
+        margin-bottom: 0; /* margin already exists on the whole row */
+}
+    .panel-footer section hr { width: 50%;
+    }
+      /* End Footer */
+
+
+
+/* SCREENHOST 8 */
+/* FOOTER */
+.panel-footer { 
+    margin-top: 30px; 
+    padding-top: 35px; 
+    padding-bottom: 30px; 
+    background-color: #222; 
+    border-top: 0;
+    color: #FFFFFF;
+}
+
+.panel-footer div.row {
+    margin-bottom: 35px;
+}
+
+#hours, #address { line-height: 2;
+}
+
+#hours > span, #address > span {
+    font-size: 1.3em;
+}
+
+#address p {
+    color: #557c3e; 
+    font-size: .8em; 
+    line-height: 1.8;
+}
+
+#testimonials {
+    font-style: italic; 
+}
+
+#testimonials p:nth-child(2) {
+    margin-top: 25px;
+}
+  /* END FOOTER */
+
+
+
+/* SCREENHOST 9 */
